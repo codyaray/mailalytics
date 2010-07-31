@@ -40,9 +40,14 @@ module Mailalytics
     end
     sizes
   end
+
+  def thread_length_csv
+    rows = trace_threads
+    puts 'length of thread, number of threads with said length'
+    rows.each_index { |i| puts "#{i.to_s}, #{rows[i].to_s}" if rows[i] != 0 }
+  end
+
 end
 
 include Mailalytics
-rows = trace_threads
-puts 'length of thread, number of threads with said length'
-rows.each_index { |i| puts "#{i.to_s}, #{rows[i].to_s}" if rows[i] != 0 }
+thread_length_csv

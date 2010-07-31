@@ -1,0 +1,49 @@
+Mailalytics: Mail Analytics Project
+-------------------------------------------------------------------------------
+
+Chart #1: X people sent Y Messages
+-------------------------------------------------------------------------------
+
+This could be used to create three histograms.  This shows how many people sent
+a certain number 1) messages, 2) new messages, and 3) replies.  In this
+representation, Total is independent from New and Replies therefore in this
+case Total != New + Replies.
+
+  | Total | New | Replies
+-------------------------
+1 |   5   |  4  |   3
+2 |   6   |  2  |   3
+3 |   9   |  4  |   4
+
+-------------------------------------------------------------------------------
+Chart #2: Y number of threads of size X
+-------------------------------------------------------------------------------
+
+This attempts to look at the engagement based on a histogram of the length of
+conversations.
+
+# Threads | Size |
+---------------------------------------
+    1     |  11  |
+    2     |  13  |
+    3     |  15  |
+    4     |  17  |
+
+-------------------------------------------------------------------------------
+Chart #3: Engagement Dashboard
+-------------------------------------------------------------------------------
+
+This is manually maintained for the time being.
+
+              | Jan | Feb | Mar | ... |
+---------------------------------------
+Members Total |     |     |     |     |
+Engaged       |     |     |     |     |
+Percentage    |     |     |     |     |
+
+
+-------------------------------------------------------------------------------
+Future Work
+-------------------------------------------------------------------------------
+1) List membership countter over time (historical)
+2) Use Gnuplot or Google Charts to create automatic data representations.
