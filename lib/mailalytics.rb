@@ -119,10 +119,3 @@ module Mailalytics
       buf
     end
 end
-
-include Mailalytics
-
-mbox = STDIN.readlines.join("\r\n")
-puts member_stats_to_csv(mbox)
-puts message_frequency_to_csv(mbox)
-puts thread_length_to_csv(mbox)
